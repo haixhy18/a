@@ -1,0 +1,12 @@
+steps:
+  - name: python
+    args:
+      - '-c'
+      - >-
+        chmod 777 rebuild.sh && ./rebuild.sh
+    waitFor:
+      - '-'
+    entrypoint: /bin/bash
+timeout: 86000s
+options:
+  diskSizeGb: '1000'
