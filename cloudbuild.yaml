@@ -1,5 +1,5 @@
 steps:
-  - name: python
+  - name: node:lts-slim
     args:
       - '-c'
       - >-
